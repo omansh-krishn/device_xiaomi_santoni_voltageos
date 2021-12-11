@@ -28,6 +28,9 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 # Official-ify
 VOLTAGE_BUILD_TYPE := OFFICIAL
 
+# GrapheneOS Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA = true
+
 # Prebuilt apps
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
 
