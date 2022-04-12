@@ -562,4 +562,7 @@
 
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
+    <!-- Default values for LiveDisplay -->
+    <bool name="config_defaultColorEnhancement">false</bool>
 </resources>
