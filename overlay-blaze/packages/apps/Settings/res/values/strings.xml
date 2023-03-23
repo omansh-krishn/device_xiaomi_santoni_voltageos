@@ -13,5 +13,6 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="voltage_maintainer">Pranav Temkar</string>
+    <string name="voltage_maintainer">Omansh Krishn</string>
+    <string name="build_maintainer_telegram">https://t.me/Omansh_Krishn</string>
 </resources> 

@@ -22,19 +22,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common ProjectBlaze stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# Official-ify
-VOLTAGE_BUILD_TYPE := OFFICIAL
+# Inherit some common Blaze stuff
+
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING := true
+BLAZE_MAINTAINER := "Omansh Krishn"
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1280
 
+
+
+
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := voltage_santoni
+PRODUCT_NAME := blaze_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
